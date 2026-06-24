@@ -12,8 +12,8 @@
   --color-forest-green: #1C3F24;
   --color-forest-green-dark: #102615;
   --color-forest-green-light: #e8ede9;
-  --color-teal: #14B8A6;
-  --color-teal-dark: #0D9488;
+  --color-teal: #0D7C63; /* Improved contrast for WCAG AA compliance (4.85:1) */
+  --color-teal-dark: #0A604D; /* Improved contrast for WCAG AA compliance */
   --color-teal-light: #CCFBf1;
   --color-wood-brown: #8C6239;
   --color-wood-dark: #5C3A21;
@@ -526,7 +526,7 @@ nav a:hover::after {
   font-size: 18px;
 }
 
-.badge-text h4 {
+.badge-text .badge-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-forest-green);
@@ -669,7 +669,7 @@ nav a:hover::after {
   flex-shrink: 0;
 }
 
-.story-feature-text h4 {
+.story-feature-text h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 4px;
@@ -895,7 +895,7 @@ nav a:hover::after {
   object-fit: cover;
 }
 
-.review-name h4 {
+.review-name .author-name {
   font-size: 16px;
   font-weight: 700;
   text-align: left;
@@ -958,7 +958,7 @@ nav a:hover::after {
   align-items: center;
 }
 
-.reservation-info h3 {
+.reservation-info h2, .reservation-info .reservation-title {
   color: #fff;
   font-size: 32px;
   margin-bottom: 20px;
@@ -993,7 +993,7 @@ nav a:hover::after {
   color: var(--color-teal);
 }
 
-.reservation-detail-text h4 {
+.reservation-detail-text h3 {
   color: #fff;
   font-size: 16px;
 }
@@ -1127,13 +1127,13 @@ footer {
   margin-bottom: 50px;
 }
 
-.footer-brand h3 {
+.footer-brand h2, .footer-brand .footer-brand-title {
   color: #fff;
   font-size: 26px;
   margin-bottom: 16px;
 }
 
-.footer-brand h3 span {
+.footer-brand h2 span, .footer-brand .footer-brand-title span {
   color: var(--color-teal);
 }
 
@@ -1168,8 +1168,8 @@ footer {
   border-color: var(--color-teal);
 }
 
-.footer-links h4,
-.footer-contact h4 {
+.footer-links h3,
+.footer-contact h3 {
   color: #fff;
   font-size: 18px;
   margin-bottom: 20px;
@@ -1177,8 +1177,8 @@ footer {
   padding-bottom: 8px;
 }
 
-.footer-links h4::after,
-.footer-contact h4::after {
+.footer-links h3::after,
+.footer-contact h3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1549,7 +1549,8 @@ tr:last-child td {
   text-align: center;
   color: var(--color-text-muted);
 }
-.no-bookings i {
+
+.no-bookings i {
   font-size: 48px;
   margin-bottom: 16px;
   color: #d1d5db;

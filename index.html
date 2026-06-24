@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css?v=26">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
   <header id="main-header">
     <div class="container header-container">
       <a href="#" class="logo-wrapper">
-        <img src="logo.jpg" alt="The Siolim Café Logo" class="logo-img">
+        <img src="logo.webp" alt="The Siolim Café Logo" class="logo-img" width="44" height="44">
         <span class="logo-text">THE SIOLIM <span>Café</span></span>
       </a>
       
@@ -84,12 +84,14 @@
           </svg>
         </button>
         
-        <button class="mobile-menu-toggle" id="menu-toggle">
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
@@ -112,7 +114,7 @@
           
           <!-- Hero Card Image (Cafe interior) -->
           <div class="hero-img-card">
-            <img src="cafe_interior_night.jpg" alt="The Siolim Café Cozy Garden Interior">
+            <img src="cafe_interior_night.webp" alt="The Siolim Café Cozy Garden Interior" fetchpriority="high" width="1024" height="662">
           </div>
           
           <!-- Interactive Badge 1: Board Games -->
@@ -121,7 +123,7 @@
               <i class="fa-solid fa-chess"></i>
             </div>
             <div class="badge-text">
-              <h4>Play Chess & Jenga</h4>
+              <p class="badge-title">Play Chess & Jenga</p>
               <p>15+ Board Games</p>
             </div>
           </div>
@@ -132,7 +134,7 @@
               <i class="fa-solid fa-mug-hot"></i>
             </div>
             <div class="badge-text">
-              <h4>Astoria Espresso</h4>
+              <p class="badge-title">Astoria Espresso</p>
               <p>Specialty Brews</p>
             </div>
           </div>
@@ -146,11 +148,11 @@
     <div class="container">
       <div class="story-grid">
         <div class="story-visuals">
-          <img class="story-img story-img-1" src="food_naruto_ramen.png" alt="Ichiraku Naruto Ramen and anime art">
-          <img class="story-img story-img-2" src="vibe_chess.jpg" alt="Wooden Chess game with cold coffee in the background">
-          <img class="story-img story-img-1" src="vibe_bracket.png" alt="Traditional carved wooden pillar bracket in rustic colors">
-          <img class="story-img story-img-2" src="vibe_record.png" alt="Vintage record player in wooden console">
-          <img class="story-img story-img-1" src="vibe_tv.png" alt="Cozy retro NIKKI television set">
+          <img class="story-img story-img-1" src="food_naruto_ramen.webp" alt="Ichiraku Naruto Ramen and anime art" loading="lazy" width="406" height="578">
+          <img class="story-img story-img-2" src="vibe_chess.webp" alt="Wooden Chess game with cold coffee in the background" loading="lazy" width="818" height="1024">
+          <img class="story-img story-img-1" src="vibe_bracket.webp" alt="Traditional carved wooden pillar bracket in rustic colors" loading="lazy" width="547" height="681">
+          <img class="story-img story-img-2" src="vibe_record.webp" alt="Vintage record player in wooden console" loading="lazy" width="1024" height="471">
+          <img class="story-img story-img-1" src="vibe_tv.webp" alt="Cozy retro NIKKI television set" loading="lazy" width="336" height="520">
         </div>
         
         <div class="story-content">
@@ -165,7 +167,7 @@
                 <i class="fa-solid fa-leaf"></i>
               </div>
               <div class="story-feature-text">
-                <h4>Lush Greenery</h4>
+                <h3>Lush Greenery</h3>
                 <p>Surrounded by hanging ferns and trailing ivy.</p>
               </div>
             </div>
@@ -175,7 +177,7 @@
                 <i class="fa-solid fa-dice"></i>
               </div>
               <div class="story-feature-text">
-                <h4>Social & Fun</h4>
+                <h3>Social & Fun</h3>
                 <p>Stack Jenga blocks or plan chess strategies.</p>
               </div>
             </div>
@@ -209,7 +211,7 @@
         <!-- Item 1: Speciality Latte (Drinks) -->
         <div class="menu-item-card" data-category="drinks">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="cafe_espresso.jpg" alt="Astoria Specialty Coffee Machine">
+            <img class="menu-item-img" src="cafe_espresso.webp" alt="Astoria Specialty Coffee Machine" loading="lazy" width="1024" height="658">
             <span class="menu-item-tag">Barista Pick</span>
           </div>
           <div class="menu-item-content">
@@ -228,7 +230,7 @@
         <!-- Item 2: Crispy Chicken Katsu Ramen (Asian) -->
         <div class="menu-item-card" data-category="asian">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_ramen.png" alt="Signature Katsu Chicken Ramen">
+            <img class="menu-item-img" src="food_ramen.webp" alt="Signature Katsu Chicken Ramen" loading="lazy" width="321" height="572">
             <span class="menu-item-tag">Best Seller</span>
           </div>
           <div class="menu-item-content">
@@ -247,7 +249,7 @@
         <!-- Item 9: Ichiraku Naruto Ramen (Asian) -->
         <div class="menu-item-card" data-category="asian">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_naruto_ramen.png" alt="Ichiraku Naruto Ramen in front of Naruto frame">
+            <img class="menu-item-img" src="food_naruto_ramen.webp" alt="Ichiraku Naruto Ramen in front of Naruto frame" loading="lazy" width="406" height="578">
             <span class="menu-item-tag">Chef's Special</span>
           </div>
           <div class="menu-item-content">
@@ -266,7 +268,7 @@
         <!-- Item 3: Loaded Cheese Fries (Classics) -->
         <div class="menu-item-card" data-category="classics">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Double Cheese Loaded Fries">
+            <img class="menu-item-img" src="food_loaded_fries.webp" alt="Double Cheese Loaded Fries" loading="lazy" width="983" height="742">
           </div>
           <div class="menu-item-content">
             <div class="menu-item-header">
@@ -284,7 +286,7 @@
         <!-- Item 4: Creamy Penne Alfredo (Classics) -->
         <div class="menu-item-card" data-category="classics">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_pasta.png" alt="Penne White-Sauce Pasta with chess board">
+            <img class="menu-item-img" src="food_pasta.webp" alt="Penne White-Sauce Pasta with chess board" loading="lazy" width="347" height="625">
           </div>
           <div class="menu-item-content">
             <div class="menu-item-header">
@@ -302,7 +304,7 @@
         <!-- Item 5: Spiced Chicken Tikka (Grills) -->
         <div class="menu-item-card" data-category="grills">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_chicken_tikka.png" alt="Charred Chicken Tikka Platter">
+            <img class="menu-item-img" src="food_chicken_tikka.webp" alt="Charred Chicken Tikka Platter" loading="lazy" width="336" height="707">
             <span class="menu-item-tag">Hot Grill</span>
           </div>
           <div class="menu-item-content">
@@ -321,7 +323,7 @@
         <!-- Item 6: Steamed Dim Sum / Momos (Asian) -->
         <div class="menu-item-card" data-category="asian">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_momos.png" alt="Classic Steamed Dim Sum in bamboo basket">
+            <img class="menu-item-img" src="food_momos.webp" alt="Classic Steamed Dim Sum in bamboo basket" loading="lazy" width="441" height="196">
           </div>
           <div class="menu-item-content">
             <div class="menu-item-header">
@@ -340,7 +342,7 @@
         <div class="menu-item-card" data-category="asian">
           <div class="menu-item-img-wrapper">
             <!-- Representing a corndog / street food basket -->
-            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Korean Cheese Corndog">
+            <img class="menu-item-img" src="food_loaded_fries.webp" alt="Korean Cheese Corndog" loading="lazy" width="983" height="742">
           </div>
           <div class="menu-item-content">
             <div class="menu-item-header">
@@ -358,7 +360,7 @@
         <!-- Item 8: Specialty Hot Chocolate (Drinks) -->
         <div class="menu-item-card" data-category="drinks">
           <div class="menu-item-img-wrapper">
-            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Gourmet Hot Chocolate">
+            <img class="menu-item-img" src="food_loaded_fries.webp" alt="Gourmet Hot Chocolate" loading="lazy" width="983" height="742">
           </div>
           <div class="menu-item-content">
             <div class="menu-item-header">
@@ -403,7 +405,7 @@
               <div class="review-author">
                 <img class="review-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah Jenkins">
                 <div class="review-name">
-                  <h4>Sarah Jenkins</h4>
+                  <p class="author-name">Sarah Jenkins</p>
                   <p>Travel Blogger & Nomad</p>
                 </div>
               </div>
@@ -422,7 +424,7 @@
               <div class="review-author">
                 <img class="review-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan D'Souza">
                 <div class="review-name">
-                  <h4>Rohan D'Souza</h4>
+                  <p class="author-name">Rohan D'Souza</p>
                   <p>Goa Local resident</p>
                 </div>
               </div>
@@ -441,7 +443,7 @@
               <div class="review-author">
                 <img class="review-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Priya Sharma">
                 <div class="review-name">
-                  <h4>Priya Sharma</h4>
+                  <p class="author-name">Priya Sharma</p>
                   <p>Weekend Visitor from Mumbai</p>
                 </div>
               </div>
@@ -466,7 +468,7 @@
           
           <div class="reservation-info">
             <span class="section-tag" style="color: var(--color-teal);">Save Your Spot</span>
-            <h3>Reserve a Cozy Table</h3>
+            <h2 class="reservation-title">Reserve a Cozy Table</h2>
             <p>Ready to escape, play, and eat? Fill out our quick reservation request. Our manager will review the request and send your status update directly to your WhatsApp number!</p>
             
             <div class="reservation-details">
@@ -475,7 +477,7 @@
                   <i class="fa-solid fa-clock"></i>
                 </div>
                 <div class="reservation-detail-text">
-                  <h4>Opening Hours</h4>
+                  <h3>Opening Hours</h3>
                   <p>Daily: 11:00 AM - 11:00 PM</p>
                 </div>
               </div>
@@ -485,7 +487,7 @@
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div class="reservation-detail-text">
-                  <h4>Our Location</h4>
+                  <h3>Our Location</h3>
                   <p>Tulip Block, Aakruti Township, Hyderabad</p>
                 </div>
               </div>
@@ -495,7 +497,7 @@
                   <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div class="reservation-detail-text">
-                  <h4>WhatsApp Updates</h4>
+                  <h3>WhatsApp Updates</h3>
                   <p>Get instant booking confirmations on your phone.</p>
                 </div>
               </div>
@@ -575,23 +577,25 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>THE SIOLIM <span>Café</span></h3>
+          <h2 class="footer-brand-title">THE SIOLIM <span>Café</span></h2>
           <p>A lush, Goan-themed tropical hangout space in Hyderabad. Unwind in nature, stack Jenga towers, challenge a friend to chess, and enjoy gourmet comforting dishes.</p>
           <div class="footer-socials">
-            <a href="https://www.instagram.com/thesiolimcafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/p/The-Siolim-Caf%C3%A9-61568693423965/" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=917569762710" target="_blank" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="manager.html" target="_blank" class="social-link" title="Manager Portal"><i class="fa-solid fa-user-shield"></i></a>
+            <a href="https://www.instagram.com/thesiolimcafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link" aria-label="Visit our Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/The-Siolim-Caf%C3%A9-61568693423965/" target="_blank" class="social-link" aria-label="Visit our Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=917569762710" target="_blank" class="social-link" aria-label="Contact us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="manager.html" target="_blank" class="social-link" title="Manager Portal" aria-label="Manager Login Portal"><i class="fa-solid fa-user-shield"></i></a>
           </div>
         </div>
         
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#story">Our Vibe & Story</a></li>
@@ -602,7 +606,7 @@
         </div>
         
         <div class="footer-contact">
-          <h4>Find Our Sanctuary</h4>
+          <h3>Find Our Sanctuary</h3>
           <div class="footer-contact-items">
             <div class="footer-contact-item">
               <i class="fa-solid fa-map-location-dot"></i>
@@ -632,6 +636,6 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
 
   <!-- Scripts -->
-  <script src="script.js?v=25"></script>
+  <script src="script.js?v=26"></script>
 </body>
 </html>
