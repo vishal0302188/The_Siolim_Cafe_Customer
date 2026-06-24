@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Siolim Café | Susegad Vibe & Global Comfort Food</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css?v=20">
+</head>
+<body>
+
+  <!-- Background Scroll-Synced Plants -->
+  <div class="bg-plants-wrapper">
+    <!-- Plant 1: Monstera (Top Left) -->
+    <svg class="floating-plant plant-left-top" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 0C25 15 25 35 15 50C10 57 2 60 0 70C2 72 10 75 18 70C25 65 30 55 28 45C38 52 45 62 40 75C38 80 32 82 30 90C32 92 38 94 45 90C55 82 58 70 52 58C62 65 72 75 80 72C85 70 88 62 95 60C92 58 88 56 82 58C72 60 62 52 58 42C68 45 78 40 85 30C88 25 92 18 90 10C88 12 85 18 80 20C72 22 62 18 58 8C65 10 75 5 80 0C65 0 52 10 45 20C38 10 25 0 10 0Z" fill="#1C3F24" fill-opacity="0.12"/>
+    </svg>
+    
+    <!-- Plant 2: Palm Leaf (Right Middle) -->
+    <svg class="floating-plant plant-right-middle" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 30C85 32 68 25 60 15C55 8 58 2 50 0C48 2 45 10 50 18C55 25 65 30 75 32C65 35 52 32 45 25C40 18 42 12 35 10C33 12 30 20 35 28C40 35 52 38 65 38C52 42 38 38 30 30C25 22 28 15 20 15C18 17 18 25 25 32C30 38 42 42 55 42C40 48 25 45 18 35C12 28 15 20 8 20C6 22 8 30 15 38C22 45 35 48 50 48C30 58 15 55 5 45C0 40 2 32 0 30C-1 32 2 42 10 48C18 55 35 55 50 50" fill="#1C3F24" fill-opacity="0.08"/>
+    </svg>
+
+    <!-- Plant 3: Hanging Pothos (Left Middle) -->
+    <svg class="floating-plant plant-left-middle" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 -10 Q 30 40 10 90 T 20 160" stroke="#1C3F24" stroke-width="2" stroke-opacity="0.15" fill="none"/>
+      <!-- Leaves along the vine -->
+      <path d="M22 20 C 35 22 40 10 30 5 C 20 0 15 10 22 20 Z" fill="#1C3F24" fill-opacity="0.12"/>
+      <path d="M12 45 C -2 43 -8 32 2 28 C 12 24 18 35 12 45 Z" fill="#1C3F24" fill-opacity="0.1"/>
+      <path d="M25 70 C 38 75 42 62 32 58 C 22 54 18 65 25 70 Z" fill="#1C3F24" fill-opacity="0.12"/>
+      <path d="M8 95 C -5 92 -8 80 2 78 C 12 76 18 85 8 95 Z" fill="#1C3F24" fill-opacity="0.09"/>
+      <path d="M20 125 C 32 130 35 118 25 114 C 15 110 10 120 20 125 Z" fill="#1C3F24" fill-opacity="0.12"/>
+    </svg>
+
+    <!-- Plant 4: Large Fern Leaf (Right Bottom) -->
+    <svg class="floating-plant plant-right-bottom" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M120 120 C 90 90 70 50 80 0" stroke="#1C3F24" stroke-width="2" stroke-opacity="0.12"/>
+      <!-- Fern Fronds -->
+      <path d="M105 100 C 80 90 60 92 65 82 C 70 72 90 85 105 100 Z" fill="#1C3F24" fill-opacity="0.1"/>
+      <path d="M92 82 C 70 72 50 75 55 65 C 60 55 80 68 92 82 Z" fill="#1C3F24" fill-opacity="0.11"/>
+      <path d="M82 62 C 60 52 40 55 45 45 C 50 35 70 48 82 62 Z" fill="#1C3F24" fill-opacity="0.1"/>
+      <path d="M75 42 C 55 32 35 35 40 25 C 45 15 65 28 75 42 Z" fill="#1C3F24" fill-opacity="0.12"/>
+      <path d="M72 22 C 55 12 40 15 45 5 C 50 -5 68 8 72 22 Z" fill="#1C3F24" fill-opacity="0.09"/>
+    </svg>
+    
+    <!-- Plant 5: Tropical Frond (Left Bottom) -->
+    <svg class="floating-plant plant-left-bottom" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100C15 85 25 65 15 50C10 43 2 40 0 30C2 28 10 25 18 30C25 35 30 45 28 55C38 48 45 38 40 25C38 20 32 18 30 10C32 8 38 6 45 10C55 18 58 30 52 42C62 35 72 25 80 28C85 30 88 38 95 40C92 42 88 44 82 42C72 40 62 48 58 58" fill="#1C3F24" fill-opacity="0.08"/>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo-wrapper">
+        <img src="logo.jpg" alt="The Siolim Café Logo" class="logo-img">
+        <span class="logo-text">THE SIOLIM <span>Café</span></span>
+      </a>
+      
+      <div class="header-right">
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">Vibe & Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#reserve" class="btn btn-accent" style="color: #fff; padding: 10px 20px;">Book Table</a></li>
+          </ul>
+        </nav>
+        
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <!-- Sun Icon (visible in dark mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (visible in light mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-seedling"></i> Goan Susegad Sanctuary in Hyderabad
+          </div>
+          <h1 class="hero-title">A Space to Breathe, Play & <span>Sip Susegad</span></h1>
+          <p class="hero-desc">Bringing relaxed Goan tropical vibes to Hyderabad, we blend cozy garden seating, board games, specialty coffee, and comforting global street food.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
+            <a href="#reserve" class="btn btn-secondary"><i class="fa-solid fa-calendar-days"></i> Reserve Table</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-container">
+          <div class="hero-image-bg"></div>
+          
+          <!-- Hero Card Image (Cafe interior) -->
+          <div class="hero-img-card">
+            <img src="cafe_interior_night.jpg" alt="The Siolim Café Cozy Garden Interior">
+          </div>
+          
+          <!-- Interactive Badge 1: Board Games -->
+          <div class="hero-badge hero-badge-1">
+            <div class="badge-icon">
+              <i class="fa-solid fa-chess"></i>
+            </div>
+            <div class="badge-text">
+              <h4>Play Chess & Jenga</h4>
+              <p>15+ Board Games</p>
+            </div>
+          </div>
+          
+          <!-- Interactive Badge 2: Speciality Coffee -->
+          <div class="hero-badge hero-badge-2">
+            <div class="badge-icon" style="background-color: #fdf6ec; color: #8c6239;">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="badge-text">
+              <h4>Astoria Espresso</h4>
+              <p>Specialty Brews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story & Vibe Section -->
+  <section class="section-padding" id="story" style="background-color: rgba(28, 63, 36, 0.02);">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visuals">
+          <img class="story-img story-img-1" src="food_naruto_ramen.png" alt="Ichiraku Naruto Ramen and anime art">
+          <img class="story-img story-img-2" src="vibe_chess.jpg" alt="Wooden Chess game with cold coffee in the background">
+          <img class="story-img story-img-1" src="vibe_bracket.png" alt="Traditional carved wooden pillar bracket in rustic colors">
+          <img class="story-img story-img-2" src="vibe_record.png" alt="Vintage record player in wooden console">
+          <img class="story-img story-img-1" src="vibe_tv.png" alt="Cozy retro NIKKI television set">
+        </div>
+        
+        <div class="story-content">
+          <span class="section-tag">Our Vibe</span>
+          <h2 class="section-title">Rooted in Goa's Laid-Back Soul</h2>
+          <p>At The Siolim Café, we embrace the Goan philosophy of <strong>Susegad</strong>—taking life slow, enjoying the present, and surrounding yourself with green nature and good company.</p>
+          <p>Whether you're looking to catch up with friends over a intense game of Chess or Jenga, work amidst trailing pothos and warm wooden accents, or simply indulge in comforting global street food, our sanctuary is open to all.</p>
+          
+          <div class="story-features">
+            <div class="story-feature-item">
+              <div class="story-feature-icon">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div class="story-feature-text">
+                <h4>Lush Greenery</h4>
+                <p>Surrounded by hanging ferns and trailing ivy.</p>
+              </div>
+            </div>
+            
+            <div class="story-feature-item">
+              <div class="story-feature-icon" style="color: var(--color-teal); background-color: var(--color-teal-light);">
+                <i class="fa-solid fa-dice"></i>
+              </div>
+              <div class="story-feature-text">
+                <h4>Social & Fun</h4>
+                <p>Stack Jenga blocks or plan chess strategies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="section-padding" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Culinary Map</span>
+        <h2 class="section-title">Comfort Food from Around the World</h2>
+        <p class="section-desc">From piping hot Korean ramen and hand-folded dim sum to classic creamy pasta and grilled kebabs, paired with specialty local roasts.</p>
+      </div>
+      
+      <!-- Menu Navigation Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" data-category="all">All Dishes</button>
+        <button class="menu-tab-btn" data-category="drinks">Drinks & Coffee</button>
+        <button class="menu-tab-btn" data-category="asian">Asian & Korean</button>
+        <button class="menu-tab-btn" data-category="classics">Cafe Classics</button>
+        <button class="menu-tab-btn" data-category="grills">Tandoor & Grills</button>
+      </div>
+      
+      <!-- Menu Display Grid -->
+      <div class="menu-grid" id="menu-grid-container">
+        
+        <!-- Item 1: Speciality Latte (Drinks) -->
+        <div class="menu-item-card" data-category="drinks">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="cafe_espresso.jpg" alt="Astoria Specialty Coffee Machine">
+            <span class="menu-item-tag">Barista Pick</span>
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Astoria Café Latte</h3>
+              <span class="menu-item-price">₹180</span>
+            </div>
+            <p class="menu-item-desc">Freshly pulled espresso shot from our red Astoria machine, layered with silky microfoam and detailed latte art.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-mug-hot"></i> Coffee</span>
+              <span>Hot / Iced</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 2: Crispy Chicken Katsu Ramen (Asian) -->
+        <div class="menu-item-card" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_ramen.png" alt="Signature Katsu Chicken Ramen">
+            <span class="menu-item-tag">Best Seller</span>
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Crispy Katsu Ramen</h3>
+              <span class="menu-item-price">₹380</span>
+            </div>
+            <p class="menu-item-desc">Rich, flavorful broth with noodles, fresh greens, soft boiled egg, corn, topped with sliced crispy panko-breaded chicken cutlet and house chili oil.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-bowl-food"></i> Ramen</span>
+              <span>Spicy 🌶️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Ichiraku Naruto Ramen (Asian) -->
+        <div class="menu-item-card" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_naruto_ramen.png" alt="Ichiraku Naruto Ramen in front of Naruto frame">
+            <span class="menu-item-tag">Chef's Special</span>
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Ichiraku Naruto Ramen</h3>
+              <span class="menu-item-price">₹390</span>
+            </div>
+            <p class="menu-item-desc">Our signature anime-style ramen bowl with rich savory broth, sweet corn, sliced carrots, green beans, fresh greens, soft-boiled egg, and tender chashu chicken.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-bowl-food"></i> Ramen</span>
+              <span>Must Try ⭐</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Loaded Cheese Fries (Classics) -->
+        <div class="menu-item-card" data-category="classics">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Double Cheese Loaded Fries">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Double Cheese Loaded Fries</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Crispy golden French fries loaded with creamy cheese sauce, signature mayo, and a sprinkle of toasted black and white sesame seeds.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-cheese"></i> Comfort</span>
+              <span>Shareable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Creamy Penne Alfredo (Classics) -->
+        <div class="menu-item-card" data-category="classics">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_pasta.png" alt="Penne White-Sauce Pasta with chess board">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Penne White-Sauce Pasta</h3>
+              <span class="menu-item-price">₹320</span>
+            </div>
+            <p class="menu-item-desc">Tender penne pasta tossed in a luxurious, creamy garlic-parmesan white sauce, topped with cherry tomatoes and chopped fresh parsley. Served with toasted garlic bread.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-plate-wheat"></i> Italian</span>
+              <span>Veg / Chicken</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Spiced Chicken Tikka (Grills) -->
+        <div class="menu-item-card" data-category="grills">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_chicken_tikka.png" alt="Charred Chicken Tikka Platter">
+            <span class="menu-item-tag">Hot Grill</span>
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Charred Chicken Tikka</h3>
+              <span class="menu-item-price">₹290</span>
+            </div>
+            <p class="menu-item-desc">Juicy boneless chicken marinated in authentic spices and yogurt, grilled to perfection with light charring. Served with a crisp purple cabbage, carrot, and cucumber salad.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-fire"></i> Grill</span>
+              <span>Spicy 🌶️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Steamed Dim Sum / Momos (Asian) -->
+        <div class="menu-item-card" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_momos.png" alt="Classic Steamed Dim Sum in bamboo basket">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Classic Steamed Dim Sum</h3>
+              <span class="menu-item-price">₹210</span>
+            </div>
+            <p class="menu-item-desc">Soft, hand-folded vegetable or chicken dumplings steamed in a traditional bamboo basket. Sprinkled with sesame seeds and coriander, served with spicy dip.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-box"></i> Steamed</span>
+              <span>6 Pieces</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Korean Cheese Corndog (Asian) -->
+        <div class="menu-item-card" data-category="asian">
+          <div class="menu-item-img-wrapper">
+            <!-- Representing a corndog / street food basket -->
+            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Korean Cheese Corndog">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Korean Cheese Corndog</h3>
+              <span class="menu-item-price">₹190</span>
+            </div>
+            <p class="menu-item-desc">Crispy, golden, panko-breaded sausage and stretchy mozzarella cheese on a stick, drizzled with spicy cheese mustard and sesame seeds.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-cookie"></i> Street Food</span>
+              <span>Stretchy Cheese</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Specialty Hot Chocolate (Drinks) -->
+        <div class="menu-item-card" data-category="drinks">
+          <div class="menu-item-img-wrapper">
+            <img class="menu-item-img" src="food_loaded_fries.jpg" alt="Gourmet Hot Chocolate">
+          </div>
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Gourmet Hot Chocolate</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Thick, premium melted dark Belgian chocolate stirred with steamed milk, topped with a generous dusting of rich Dutch cocoa powder.</p>
+            <div class="menu-item-meta">
+              <span class="menu-item-badge"><i class="fa-solid fa-heart"></i> Warm Signature</span>
+              <span>Decadent</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section-padding" id="reviews" style="background-color: rgba(20, 184, 166, 0.03);">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Happy Visitors</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-desc">Honest stories from travelers and locals who found their cozy spot in Siolim.</p>
+      </div>
+      
+      <div class="reviews-container">
+        <div class="glass-card" style="padding: 50px 40px; min-height: 340px;">
+          <div class="reviews-carousel">
+            
+            <!-- Slide 1 -->
+            <div class="review-slide active">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">"The Siolim Café is an absolute gem in North Goa. The vibe is incredibly green and relaxed—literally the definition of 'Susegad'. I spent hours reading here, played a couple of rounds of Chess, and the chicken ramen was outstanding!"</p>
+              <div class="review-author">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah Jenkins">
+                <div class="review-name">
+                  <h4>Sarah Jenkins</h4>
+                  <p>Travel Blogger & Nomad</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="review-slide">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">"Hands down the best coffee in the area! The Astoria machine pulls perfect shots. The loaded cheese fries are addictive, and the staff are incredibly warm. Plus, the stacked wood plant displays make for beautiful pictures."</p>
+              <div class="review-author">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Rohan D'Souza">
+                <div class="review-name">
+                  <h4>Rohan D'Souza</h4>
+                  <p>Goa Local resident</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="review-slide">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">"We came here for a quick lunch and ended up playing Jenga for three hours. The white-sauce penne pasta was extremely creamy, and the Korean corndogs are super authentic. A must-visit hangout spot in Siolim!"</p>
+              <div class="review-author">
+                <img class="review-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Priya Sharma">
+                <div class="review-name">
+                  <h4>Priya Sharma</h4>
+                  <p>Weekend Visitor from Mumbai</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="reviews-nav">
+            <button class="reviews-nav-btn" id="prev-review"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="reviews-nav-btn" id="next-review"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="section-padding container" style="margin-bottom: 80px;" id="reserve">
+    <div class="reservation-section">
+      <div class="container">
+        <div class="reservation-grid">
+          
+          <div class="reservation-info">
+            <span class="section-tag" style="color: var(--color-teal);">Save Your Spot</span>
+            <h3>Reserve a Cozy Table</h3>
+            <p>Ready to escape, play, and eat? Fill out our quick reservation request. Our manager will review the request and send your status update directly to your WhatsApp number!</p>
+            
+            <div class="reservation-details">
+              <div class="reservation-detail-item">
+                <div class="reservation-detail-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="reservation-detail-text">
+                  <h4>Opening Hours</h4>
+                  <p>Daily: 11:00 AM - 11:00 PM</p>
+                </div>
+              </div>
+              
+              <div class="reservation-detail-item">
+                <div class="reservation-detail-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="reservation-detail-text">
+                  <h4>Our Location</h4>
+                  <p>Tulip Block, Aakruti Township, Hyderabad</p>
+                </div>
+              </div>
+
+              <div class="reservation-detail-item">
+                <div class="reservation-detail-icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="reservation-detail-text">
+                  <h4>WhatsApp Updates</h4>
+                  <p>Get instant booking confirmations on your phone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Reservation Form -->
+          <div class="position-relative">
+            <div class="reservation-form-container" id="booking-card">
+              <form id="reservation-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">WhatsApp Phone Number (with Country Code)</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="e.g. +919876543210" required>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" class="form-control" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="time">Select Time</label>
+                    <select id="time" class="form-control" required>
+                      <option value="" disabled selected>Select Time</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="2:00 PM">2:00 PM</option>
+                      <option value="3:30 PM">3:30 PM</option>
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="6:30 PM">6:30 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="9:30 PM">9:30 PM</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <select id="guests" class="form-control" required>
+                    <option value="" disabled selected>How many guests?</option>
+                    <option value="1 Guest">1 Guest</option>
+                    <option value="2 Guests">2 Guests</option>
+                    <option value="3 Guests">3 Guests</option>
+                    <option value="4 Guests">4 Guests</option>
+                    <option value="5-6 Guests">5-6 Guests</option>
+                    <option value="7+ Guests">7+ Guests (Party)</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-accent" style="width: 100%; color: #fff; margin-top: 10px;">
+                  <i class="fa-solid fa-paper-plane"></i> Submit Request
+                </button>
+              </form>
+            </div>
+            
+            <!-- Success Overlay Notification -->
+            <div class="success-overlay" id="success-message">
+              <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3>Request Submitted!</h3>
+              <p>Your table booking is currently <strong>PENDING</strong>. The cafe manager will review it shortly and send a confirmation message to your WhatsApp number.</p>
+              <button class="btn btn-secondary" id="reset-booking-btn" style="color: #fff; border-color: rgba(255, 255, 255, 0.4); padding: 10px 20px;">
+                Book Another Table
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>THE SIOLIM <span>Café</span></h3>
+          <p>A lush, Goan-themed tropical hangout space in Hyderabad. Unwind in nature, stack Jenga towers, challenge a friend to chess, and enjoy gourmet comforting dishes.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/thesiolimcafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/The-Siolim-Caf%C3%A9-61568693423965/" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=917569762710" target="_blank" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="manager.html" target="_blank" class="social-link" title="Manager Portal"><i class="fa-solid fa-user-shield"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">Our Vibe & Story</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#reviews">Guest Reviews</a></li>
+            <li><a href="#reserve">Reserve Table</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Find Our Sanctuary</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p><span>Address:</span> Tulip Block, AAKRUTI TOWNSHIP, above Ratnadeep Supermarket, Mallikarjuna Nagar, Boduppal, Hyderabad, Telangana 500092</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p><span>Email:</span> hello@thesiolimcafe.com</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <p><span>Call us:</span> +91 75697 62710</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Siolim Café. All Rights Reserved. Designed with Susegad Vibes.</p>
+        <p><a href="manager.html" target="_blank" style="color: var(--color-teal); font-weight: 600;"><i class="fa-solid fa-lock"></i> Manager Desk Login</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase Compatibility SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- Scripts -->
+  <script src="script.js?v=25"></script>
+</body>
+</html>
