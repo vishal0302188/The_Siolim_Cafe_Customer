@@ -1854,3 +1854,214 @@ tr:last-child td {
 .reveal-fade.revealed {
   transform: none;
 }
+
+
+/* ----------------------------------------------------
+   GOOGLE & ZOMATO REVIEWS INTEGRATION STYLING
+   ---------------------------------------------------- */
+
+.reviews-platforms-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.platform-card {
+  background: var(--bg-card-white);
+  border: 1px solid var(--glass-card-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-md);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-bounce);
+  position: relative;
+  text-decoration: none;
+}
+
+.platform-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.platform-card.google {
+  border-bottom: 4px solid #4285F4;
+}
+
+.platform-card.zomato {
+  border-bottom: 4px solid #E23744;
+}
+
+.platform-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.google .platform-icon {
+  background-color: rgba(66, 133, 244, 0.1);
+  color: #4285F4;
+}
+
+.zomato .platform-icon {
+  background-color: rgba(226, 55, 68, 0.1);
+  color: #E23744;
+}
+
+.platform-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.rating-num {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-forest-green);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+}
+
+.rating-num i {
+  color: #FBBF24; /* Gold Star */
+  font-size: 16px;
+}
+
+.reviews-count {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.platform-link-chevron {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  opacity: 0.5;
+  transition: var(--transition-smooth);
+}
+
+.platform-card:hover .platform-link-chevron {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Testimonials Source Tags */
+.review-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.platform-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.platform-tag.google {
+  background-color: rgba(66, 133, 244, 0.1);
+  color: #4285F4;
+}
+
+.platform-tag.zomato {
+  background-color: rgba(226, 55, 68, 0.1);
+  color: #E23744;
+}
+
+/* Reviews Call to Actions */
+.reviews-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  border-top: 1px solid var(--glass-card-border);
+  padding-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btn-review-action {
+  font-size: 14px;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: var(--transition-smooth);
+}
+
+.btn-google-review {
+  color: #4285F4;
+  border: 2px solid #4285F4;
+}
+
+.btn-google-review:hover {
+  background-color: #4285F4;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+.btn-zomato-review {
+  color: #E23744;
+  border: 2px solid #E23744;
+}
+
+.btn-zomato-review:hover {
+  background-color: #E23744;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(226, 55, 68, 0.2);
+}
+
+/* Dark theme overrides for platform stats */
+[data-theme="dark"] .platform-card {
+  background: var(--bg-card);
+}
+[data-theme="dark"] .rating-num {
+  color: #FAF8F4;
+}
+[data-theme="dark"] .google .platform-icon {
+  background-color: rgba(66, 133, 244, 0.15);
+  color: #6EA3FF;
+}
+[data-theme="dark"] .zomato .platform-icon {
+  background-color: rgba(226, 55, 68, 0.15);
+  color: #FF6E7B;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reviews-platforms-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .reviews-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .review-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
