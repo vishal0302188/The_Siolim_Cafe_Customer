@@ -109,12 +109,12 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <div class="hero-tag">
+          <div class="hero-tag reveal-on-load">
             <i class="fa-solid fa-seedling"></i> Goan Susegad Sanctuary in Hyderabad
           </div>
-          <h1 class="hero-title">A Space to Breathe, Play & <span>Sip Susegad</span></h1>
-          <p class="hero-desc">Bringing relaxed Goan tropical vibes to Hyderabad, we blend cozy garden seating, board games, specialty coffee, and comforting global street food.</p>
-          <div class="hero-buttons">
+          <h1 class="hero-title reveal-on-load" style="transition-delay: 100ms;">A Space to Breathe, Play & <span>Sip Susegad</span></h1>
+          <p class="hero-desc reveal-on-load" style="transition-delay: 200ms;">Bringing relaxed Goan tropical vibes to Hyderabad, we blend cozy garden seating, board games, specialty coffee, and comforting global street food.</p>
+          <div class="hero-buttons reveal-on-load" style="transition-delay: 300ms;">
             <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
             <a href="#reserve" class="btn btn-secondary"><i class="fa-solid fa-calendar-days"></i> Reserve Table</a>
           </div>
@@ -124,12 +124,12 @@
           <div class="hero-image-bg"></div>
           
           <!-- Hero Card Image (Cafe interior) -->
-          <div class="hero-img-card">
+          <div class="hero-img-card reveal-on-load reveal-scale" style="transition-delay: 150ms;">
             <img src="cafe_interior_night.webp" alt="The Siolim Café Cozy Garden Interior" fetchpriority="high" width="1024" height="662">
           </div>
           
           <!-- Interactive Badge 1: Board Games -->
-          <div class="hero-badge hero-badge-1">
+          <div class="hero-badge hero-badge-1 reveal-on-load reveal-scale" style="transition-delay: 400ms;">
             <div class="badge-icon">
               <i class="fa-solid fa-chess"></i>
             </div>
@@ -140,7 +140,7 @@
           </div>
           
           <!-- Interactive Badge 2: Speciality Coffee -->
-          <div class="hero-badge hero-badge-2">
+          <div class="hero-badge hero-badge-2 reveal-on-load reveal-scale" style="transition-delay: 500ms;">
             <div class="badge-icon" style="background-color: #fdf6ec; color: #8c6239;">
               <i class="fa-solid fa-mug-hot"></i>
             </div>
@@ -165,7 +165,7 @@
           <img class="story-img story-img-2" src="vibe_tv.webp" alt="Cozy retro NIKKI television set" loading="lazy" width="336" height="520">
         </div>
         
-        <div class="story-content">
+        <div class="story-content reveal-on-scroll">
           <span class="section-tag">Our Vibe</span>
           <h2 class="section-title">Rooted in Goa's Laid-Back Soul</h2>
           <p>At The Siolim Café, we embrace the Goan philosophy of <strong>Susegad</strong>—taking life slow, enjoying the present, and surrounding yourself with green nature and good company.</p>
@@ -200,7 +200,7 @@
   <!-- Interactive Menu Section -->
   <section class="section-padding" id="menu">
     <div class="container">
-      <div class="section-header text-center">
+      <div class="section-header text-center reveal-on-scroll">
         <span class="section-tag">Our Culinary Map</span>
         <h2 class="section-title">Comfort Food from Around the World</h2>
         <p class="section-desc">From piping hot Korean ramen and hand-folded dim sum to classic creamy pasta and grilled kebabs, paired with specialty local roasts.</p>
@@ -392,14 +392,14 @@
   <!-- Reviews Section -->
   <section class="section-padding" id="reviews" style="background-color: rgba(20, 184, 166, 0.03);">
     <div class="container">
-      <div class="section-header text-center">
+      <div class="section-header text-center reveal-on-scroll">
         <span class="section-tag">Happy Visitors</span>
         <h2 class="section-title">What Our Guests Say</h2>
         <p class="section-desc">Honest stories from travelers and locals who found their cozy spot in Siolim.</p>
       </div>
       
       <div class="reviews-container">
-        <div class="glass-card" style="padding: 50px 40px; min-height: 340px;">
+        <div class="glass-card reveal-on-scroll reveal-scale" style="padding: 50px 40px; min-height: 340px;">
           <div class="reviews-carousel">
             
             <!-- Slide 1 -->
@@ -476,7 +476,7 @@
       <div class="container">
         <div class="reservation-grid">
           
-          <div class="reservation-info">
+          <div class="reservation-info reveal-on-scroll">
             <span class="section-tag" style="color: var(--color-teal);">Save Your Spot</span>
             <h2 class="reservation-title">Reserve a Cozy Table</h2>
             <p>Ready to escape, play, and eat? Fill out our quick reservation request. Our manager will review the request and send your status update directly to your WhatsApp number!</p>
@@ -516,7 +516,7 @@
           
           <!-- Reservation Form -->
           <div class="position-relative">
-            <div class="reservation-form-container" id="booking-card">
+            <div class="reservation-form-container reveal-on-scroll reveal-scale" id="booking-card">
               <form id="reservation-form">
                 <div class="form-group">
                   <label for="name">Your Name</label>

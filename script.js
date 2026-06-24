@@ -1577,5 +1577,56 @@ Sending warm vibes from Siolim! \u{1F334}
     });
   }
 
+  // --- START PREMIUM SCROLL & LOAD REVEAL SYSTEM ---
+  // High-performance IntersectionObserver for scroll-reveal
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.classList.add('revealed');
+        observer.unobserve(el); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.1, // Trigger when 10% is visible
+    rootMargin: '0px 0px -50px 0px' // Slightly offset trigger point
+  });
+
+  // Auto-stagger grid and list children to create cascading animation flow
+  const staggerGroups = document.querySelectorAll('.menu-grid, .story-visuals, .story-features, .footer-grid, .reservation-details');
+  staggerGroups.forEach(group => {
+    const children = Array.from(group.children);
+    let delay = 0;
+    children.forEach(child => {
+      // Check for common visual cards/elements inside grids
+      if (
+        child.tagName === 'IMG' || 
+        child.classList.contains('menu-item-card') || 
+        child.classList.contains('story-feature-item') || 
+        child.classList.contains('footer-brand') || 
+        child.classList.contains('footer-links') || 
+        child.classList.contains('footer-contact') || 
+        child.classList.contains('reservation-detail-item')
+      ) {
+        child.classList.add('reveal-on-scroll', 'reveal-scale');
+        child.style.transitionDelay = `${delay}ms`;
+        delay += 100; // Increment delay by 100ms for each sibling card
+      }
+    });
+  });
+
+  // Observe all scroll reveal elements
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // Trigger load-reveal elements (above-the-fold) after a small delay
+  setTimeout(() => {
+    document.querySelectorAll('.reveal-on-load').forEach(el => {
+      el.classList.add('revealed');
+    });
+  }, 100);
+  // --- END PREMIUM SCROLL & LOAD REVEAL SYSTEM ---
+
 });
 
