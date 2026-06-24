@@ -1231,6 +1231,18 @@ footer {
   font-size: 13px;
 }
 
+.footer-manager-link {
+  color: #2DD4BF; /* Neon teal for high contrast compliance on dark footer background */
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-manager-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 /* Tabs for Manager Dashboard */
 .dashboard-tabs-container {
   display: flex;
