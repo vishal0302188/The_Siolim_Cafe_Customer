@@ -612,6 +612,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Check for common visual cards/elements inside grids
       if (
         child.tagName === 'IMG' || 
+        child.classList.contains('story-img-wrapper') || 
         child.classList.contains('menu-item-card') || 
         child.classList.contains('story-feature-item') || 
         child.classList.contains('footer-brand') || 
